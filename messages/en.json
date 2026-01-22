@@ -1,0 +1,79 @@
+{
+    "locale": "en",
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "achievements": "Achievements",
+        "work": "Projects",
+        "blog": "Blog",
+        "presentations": "Presentations",
+        "team": "Team",
+        "gallery": "Gallery",
+        "contact": "Contact"
+    },
+    "person": {
+        "role": "Autonomous Systems and AI Team"
+    },
+    "newsletter": {
+        "title": "Subscribe to our newsletter",
+        "description": "Join our newsletter for the latest project updates and news"
+    },
+    "blog": {
+        "title": "Blog",
+        "description": "Project updates and team news"
+    },
+    "home": {
+        "title": "AI2X - Autonomous Systems and AI Team",
+        "description": "Innovative student team developing autonomous systems, AI, and robotics projects",
+        "headline": "Technology Shaping the Future",
+        "subline": "Autonomous Systems and Artificial Intelligence Team. Innovative ideas, transformative solutions and engineers of the future."
+    },
+    "about": {
+        "title": "About AI2X",
+        "description": "Meet the AI2X Team",
+        "intro": {
+            "title": "About AI2X",
+            "description": "AI2X is an innovative team of university students focused on technology and artificial intelligence. We represent our country in national and international competitions by developing projects in autonomous systems, artificial intelligence, and robotics. Our team consists of students from different engineering disciplines and produces solutions to complex problems through interdisciplinary work."
+        },
+        "technical": {
+            "title": "Our Focus Areas",
+            "autonomous": "Autonomous Systems",
+            "autonomousDesc": "We develop groundbreaking autonomous systems in our Robotaxi and UAV projects.",
+            "ai": "Artificial Intelligence",
+            "aiDesc": "We create intelligent solutions with machine learning and deep learning.",
+            "embedded": "Embedded Systems",
+            "embeddedDesc": "We design powerful solutions by combining hardware and software."
+        }
+    },
+    "achievements": {
+        "title": "Our Achievements",
+        "description": "Competition awards and project achievements"
+    },
+    "team": {
+        "title": "Our Team",
+        "description": "Meet our talented team members"
+    },
+    "work": {
+        "title": "Our Projects",
+        "description": "TEKNOFEST and competition projects by AI2X"
+    },
+    "gallery": {
+        "title": "Project Gallery",
+        "description": "Photos from our projects and events"
+    },
+    "presentations": {
+        "title": "Our Presentations",
+        "description": "Our academic and sectoral presentations where we showcase our innovative projects and solutions."
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "Get in touch with us for questions or collaboration offers."
+    },
+    "common": {
+        "readMore": "Read More",
+        "viewDetails": "View Details",
+        "learnMore": "Learn More",
+        "getInTouch": "Get in Touch",
+        "allRightsReserved": "All Rights Reserved"
+    }
+}

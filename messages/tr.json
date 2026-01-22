@@ -1,0 +1,79 @@
+{
+    "locale": "tr",
+    "nav": {
+        "home": "Ana Sayfa",
+        "about": "Hakkımızda",
+        "achievements": "Başarılarımız",
+        "work": "Projeler",
+        "blog": "Blog",
+        "presentations": "Sunumlar",
+        "team": "Ekip",
+        "gallery": "Galeri",
+        "contact": "İletişim"
+    },
+    "person": {
+        "role": "Otonom Sistemler ve Yapay Zeka Takımı"
+    },
+    "newsletter": {
+        "title": "Bültinimize Abone Olun",
+        "description": "En son proje güncellemeleri ve haberler için bültinimize katılın"
+    },
+    "blog": {
+        "title": "Blog",
+        "description": "Proje güncellemeleri ve takım haberleri"
+    },
+    "home": {
+        "title": "AI2X - Otonom Sistemler ve Yapay Zeka Takımı",
+        "description": "Otonom sistemler, yapay zeka ve robotik projeleri geliştiren yenilikçi öğrenci takımı",
+        "headline": "Geleceği Şekillendiren Teknoloji",
+        "subline": "Otonom Sistemler ve Yapay Zeka Takımı. Yenilikçi fikirler, inovatif çözümler ve geleceğin mühendisleri."
+    },
+    "about": {
+        "title": "AI2X Hakkında",
+        "description": "AI2X Takımı ile Tanışın",
+        "intro": {
+            "title": "AI2X Hakkında",
+            "description": "AI2X, üniversite öğrencilerinden oluşan, teknoloji ve yapay zeka odaklı yenilikçi bir takımdır. Otonom sistemler, yapay zeka ve robotik alanlarında projeler geliştirerek ulusal ve uluslararası yarışmalarda ülkemizi temsil ediyoruz. Ekibimiz, farklı mühendislik disiplinlerinden gelen öğrencilerden oluşmakta ve disiplinler arası çalışma ile kompleks problemlere çözümler üretmektedir."
+        },
+        "technical": {
+            "title": "Odak Alanlarımız",
+            "autonomous": "Otonom Sistemler",
+            "autonomousDesc": "Robotaksi ve İHA projelerimizde çığır açan otonom sistemler geliştiriyoruz.",
+            "ai": "Yapay Zeka",
+            "aiDesc": "Makine öğrenmesi ve derin öğrenme ile akıllı çözümler üretiyoruz.",
+            "embedded": "Gömülü Sistemler",
+            "embeddedDesc": "Donanım ve yazılımı birleştirerek güçlü çözümler tasarlıyoruz."
+        }
+    },
+    "achievements": {
+        "title": "Başarılarımız",
+        "description": "Yarışma ödülleri ve proje başarıları"
+    },
+    "team": {
+        "title": "Ekibimiz",
+        "description": "Yetenekli ekip üyelerimizle tanışın"
+    },
+    "work": {
+        "title": "Projelerimiz",
+        "description": "AI2X TEKNOFEST ve yarışma projeleri"
+    },
+    "gallery": {
+        "title": "Proje Galerisi",
+        "description": "Projelerimizden ve etkinliklerden fotoğraflar"
+    },
+    "presentations": {
+        "title": "Sunumlarımız",
+        "description": "Geliştirdiğimiz yenilikçi projelerimizi ve çözümlerimizi sunduğumuz akademik ve sektörel sunumlarımız."
+    },
+    "contact": {
+        "title": "İletişim",
+        "description": "Sorularınız veya işbirliği teklifleriniz için bizimle iletişime geçin."
+    },
+    "common": {
+        "readMore": "Devamını Oku",
+        "viewDetails": "Detayları Görüntüle",
+        "learnMore": "Daha Fazla Bilgi",
+        "getInTouch": "İletişime Geçin",
+        "allRightsReserved": "Tüm Hakları Saklıdır"
+    }
+}
