@@ -1,5 +1,3 @@
-import { InlineCode } from "@/once-ui/components";
-
 const person = {
     firstName: 'AI2X',
     lastName:  'Software',
@@ -87,12 +85,6 @@ const about = {
             }
         ]
     }
-}
-
-const blog = {
-    label: { en: 'Blog', tr: 'Blog' },
-    title: { en: 'Team Updates', tr: 'Takım Güncellemeleri' },
-    description: { en: 'Latest news from AI2X', tr: 'AI2X\'ten son haberler' }
 }
 
 const work = {
@@ -362,4 +354,4 @@ const stats = {
     ]
 }
 
-export { person, social, newsletter, home, about, blog, work, gallery, achievements, team, stats, projects };
+export { person, social, newsletter, home, about, work, gallery, achievements, team, stats, projects };

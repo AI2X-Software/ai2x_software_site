@@ -1,4 +1,3 @@
-import { InlineCode } from "@/once-ui/components";
 import { achievements, team, stats, projects } from './content';
 
 const createI18nContent = (t) => {
@@ -91,12 +90,6 @@ const createI18nContent = (t) => {
         }
     }
 
-    const blog = {
-        label: t("nav.blog") || 'Blog',
-        title: t("blog.title") || { en: 'Team Updates', tr: 'Takım Güncellemeleri' },
-        description: t("blog.description") || { en: 'Latest news from AI2X', tr: 'AI2X\'ten son haberler' }
-    }
-
     const work = {
         label: t("nav.work") || { en: 'Projects', tr: 'Projeler' },
         title: t("work.title") || { en: 'Our Projects', tr: 'Projelerimiz' },
@@ -137,7 +130,6 @@ const createI18nContent = (t) => {
         newsletter,
         home,
         about,
-        blog,
         work,
         gallery,
         achievements,

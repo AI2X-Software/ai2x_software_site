@@ -5,7 +5,6 @@
         "about": "About",
         "achievements": "Achievements",
         "work": "Projects",
-        "blog": "Blog",
         "presentations": "Presentations",
         "team": "Team",
         "gallery": "Gallery",
@@ -17,10 +16,6 @@
     "newsletter": {
         "title": "Subscribe to our newsletter",
         "description": "Join our newsletter for the latest project updates and news"
-    },
-    "blog": {
-        "title": "Blog",
-        "description": "Project updates and team news"
     },
     "home": {
         "title": "AI2X - Autonomous Systems and AI Team",

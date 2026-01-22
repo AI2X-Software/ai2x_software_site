@@ -5,7 +5,6 @@
         "about": "Hakkımızda",
         "achievements": "Başarılarımız",
         "work": "Projeler",
-        "blog": "Blog",
         "presentations": "Sunumlar",
         "team": "Ekip",
         "gallery": "Galeri",
@@ -17,10 +16,6 @@
     "newsletter": {
         "title": "Bültinimize Abone Olun",
         "description": "En son proje güncellemeleri ve haberler için bültinimize katılın"
-    },
-    "blog": {
-        "title": "Blog",
-        "description": "Proje güncellemeleri ve takım haberleri"
     },
     "home": {
         "title": "AI2X - Otonom Sistemler ve Yapay Zeka Takımı",
