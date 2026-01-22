@@ -153,7 +153,8 @@ export const Header = () => {
                         </Flex>
                     }
                 </Flex>
-                <Flex fillWidth justifyContent="center">
+                {/* Desktop Nav - Single Row */}
+                <Flex hide="s" fillWidth justifyContent="center">
                     <Flex
                         background="surface" border="neutral-medium" borderStyle="solid-1" radius="m-4" shadow="l"
                         padding="4"
@@ -179,7 +180,59 @@ export const Header = () => {
                                         prefixIcon={item.icon as any}
                                         href={href}
                                         selected={pathname === item.path || pathname.startsWith(item.path + '/')}>
-                                        <Flex paddingX="2" hide="s">{label}</Flex>
+                                        <Flex paddingX="2">{label}</Flex>
+                                    </ToggleButton>
+                                );
+                            })}
+                        </Flex>
+                    </Flex>
+                </Flex>
+                {/* Mobile Nav - 4x2 Grid */}
+                <Flex show="s" fillWidth justifyContent="center">
+                    <Flex
+                        background="surface" border="neutral-medium" borderStyle="solid-1" radius="m-4" shadow="l"
+                        padding="4"
+                        mobileDirection="column"
+                        gap="2"
+                        style={{ width: '100%' }}>
+                        <Flex gap="2" justifyContent="center">
+                            {navItems.filter(item => item.enabled).slice(0, 4).map((item) => {
+                                const locale = (params?.locale || 'en') as 'en' | 'tr';
+                                let label: string;
+                                if (typeof item.content === 'object') {
+                                    label = (item.content as any)[locale] || (item.content as any).en;
+                                } else {
+                                    label = item.content as string;
+                                }
+                                const href = item.path === '/' ? `/${locale}` : `/${locale}${item.path}`;
+
+                                return (
+                                    <ToggleButton
+                                        key={item.path}
+                                        prefixIcon={item.icon as any}
+                                        href={href}
+                                        selected={pathname === item.path || pathname.startsWith(item.path + '/')}>
+                                    </ToggleButton>
+                                );
+                            })}
+                        </Flex>
+                        <Flex gap="2" justifyContent="center">
+                            {navItems.filter(item => item.enabled).slice(4).map((item) => {
+                                const locale = (params?.locale || 'en') as 'en' | 'tr';
+                                let label: string;
+                                if (typeof item.content === 'object') {
+                                    label = (item.content as any)[locale] || (item.content as any).en;
+                                } else {
+                                    label = item.content as string;
+                                }
+                                const href = item.path === '/' ? `/${locale}` : `/${locale}${item.path}`;
+
+                                return (
+                                    <ToggleButton
+                                        key={item.path}
+                                        prefixIcon={item.icon as any}
+                                        href={href}
+                                        selected={pathname === item.path || pathname.startsWith(item.path + '/')}>
                                     </ToggleButton>
                                 );
                             })}
