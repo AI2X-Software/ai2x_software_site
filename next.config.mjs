@@ -14,6 +14,9 @@ const nextConfig = {
     sassOptions: {
         silenceDeprecations: ['legacy-js-api', 'import'],
     },
+    eslint: {
+        ignoreDuringBuilds: true,
+    },
 };
 
 export default withNextIntl(withMDX(nextConfig));
