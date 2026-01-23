@@ -31,6 +31,8 @@ import {
 	HiSignal
 } from "react-icons/hi2";
 
+import { GoClockFill } from "react-icons/go";
+
 import {
 	PiHouseDuotone,
 	PiUserCircleDuotone,
@@ -83,5 +85,6 @@ export const iconLibrary: Record<string, IconType> = {
 	rocket: HiRocketLaunch,
 	sparkles: HiSparkles,
 	cpu: HiCpuChip,
-	signal: HiSignal
+	signal: HiSignal,
+	clock: GoClockFill
 };

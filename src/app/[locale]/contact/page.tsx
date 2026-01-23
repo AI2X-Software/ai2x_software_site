@@ -177,10 +177,9 @@ export default function ContactPage() {
                     link="mailto:ai2xsoftware@gmail.com"
                 />
                 <ContactCard
-                    icon="calendar"
-                    title={isTR ? 'Telefon' : 'Phone'}
-                    value="+90 507 027 11 69"
-                    link="tel:+905070271169"
+                    icon="clock"
+                    title={isTR ? 'Yanıt Süresi' : 'Response Time'}
+                    value={isTR ? '24 saat içinde' : 'Within 24 hours'}
                 />
             </Flex>
 
