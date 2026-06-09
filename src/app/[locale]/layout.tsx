@@ -28,11 +28,11 @@ export async function generateMetadata(
 		title: home.title,
 		description: home.description,
 		openGraph: {
-			title: `${person.firstName}'s Portfolio`,
-			description: 'Portfolio website showcasing my work.',
-			url: baseURL,
-			siteName: `${person.firstName}'s Portfolio`,
-			locale: 'en_US',
+			title: home.title,
+			description: home.description,
+			url: `https://${baseURL}/${locale}`,
+			siteName: person.name,
+			locale: locale === 'tr' ? 'tr_TR' : 'en_US',
 			type: 'website',
 		},
 		robots: {
@@ -92,7 +92,7 @@ export default async function RootLayout({
 	return (
 		<NextIntlClientProvider messages={messages}>
 			<Flex
-				as="html" lang="en"
+				as="html" lang={locale}
 				background="page"
 				data-neutral={style.neutral} data-brand={style.brand} data-accent={style.accent}
 				data-solid={style.solid} data-solid-style={style.solidStyle}

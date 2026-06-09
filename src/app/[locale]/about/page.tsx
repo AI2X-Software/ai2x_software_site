@@ -90,7 +90,7 @@ export default function About(
                         jobTitle: getLocalized(person.role),
                         description: getLocalized(about.intro.description),
                         url: `https://${baseURL}/about`,
-                        image: `${baseURL}/images/${person.avatar}`,
+                        image: `https://${baseURL}${person.avatar}`,
                         sameAs: social
                             .filter((item) => item.link && !item.link.startsWith('mailto:')) // Filter out empty links and email links
                             .map((item) => item.link),
