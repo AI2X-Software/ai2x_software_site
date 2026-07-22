@@ -1,13 +1,13 @@
 import { Flex, Text, Heading, Button } from '@/once-ui/components';
 import { baseURL } from '@/app/resources';
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
-import { useTranslations } from 'next-intl';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
 import { ProjectGallery } from '@/components/work/ProjectGallery';
 
 export async function generateMetadata(
-    {params: {locale}}: { params: { locale: string }}
+    { params }: { params: Promise<{ locale: string }> }
 ) {
+    const { locale } = await params;
 	const title = locale === 'tr' ? 'Sunumlarımız' : 'Our Presentations';
 	const description = locale === 'tr'
         ? 'Geliştirdiğimiz yenilikçi projelerimizi ve çözümlerimizi sunduğumuz akademik ve sektörel sunumlarımız.'
@@ -38,12 +38,13 @@ export async function generateMetadata(
 	};
 }
 
-export default function PresentationsPage(
-    { params: {locale}}: { params: { locale: string }}
+export default async function PresentationsPage(
+    { params }: { params: Promise<{ locale: string }> }
 ) {
-    unstable_setRequestLocale(locale);
+    const { locale } = await params;
+    setRequestLocale(locale);
 
-    const t = useTranslations();
+    const t = await getTranslations();
     const isTR = locale === 'tr';
 
     return (

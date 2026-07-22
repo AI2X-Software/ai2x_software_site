@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation'
 import { Button, Flex, Heading, Text } from '@/once-ui/components'
 import { baseURL } from '@/app/resources';
 import { routing } from '@/i18n/routing';
-import { unstable_setRequestLocale } from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server';
 import { projects } from '@/app/resources/content';
 import { person } from '@/app/resources/content';
 import fs from 'fs';
@@ -12,10 +12,10 @@ import { mdxComponents } from '@/components/mdx';
 import { ProjectGallery } from '@/components/work/ProjectGallery';
 
 interface WorkParams {
-    params: {
+    params: Promise<{
         slug: string;
 		locale: string;
-    };
+    }>;
 }
 
 export async function generateStaticParams(): Promise<{ slug: string; locale: string }[]> {
@@ -34,7 +34,8 @@ export async function generateStaticParams(): Promise<{ slug: string; locale: st
     return allParams;
 }
 
-export function generateMetadata({ params: { slug, locale } }: WorkParams) {
+export async function generateMetadata({ params }: WorkParams) {
+	const { slug, locale } = await params;
 	const project = projects.items.find((p) => p.id === slug);
 	const currentLocale = locale as 'en' | 'tr';
 
@@ -66,8 +67,8 @@ export function generateMetadata({ params: { slug, locale } }: WorkParams) {
 }
 
 export default async function Project({ params }: WorkParams) {
-	const { slug, locale } = params;
-	unstable_setRequestLocale(locale);
+	const { slug, locale } = await params;
+	setRequestLocale(locale);
 	const currentLocale = locale as 'en' | 'tr';
 
 	const project = projects.items.find((p) => p.id === slug);

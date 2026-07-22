@@ -1,12 +1,12 @@
 import { Flex } from '@/once-ui/components';
 import { Team } from '@/components/team/Team';
 import { baseURL, renderContent } from '@/app/resources';
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
-import { useTranslations } from 'next-intl';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 export async function generateMetadata(
-    {params: {locale}}: { params: { locale: string }}
+    { params }: { params: Promise<{ locale: string }> }
 ) {
+    const { locale } = await params;
 
     const t = await getTranslations();
     const { team } = renderContent(t);
@@ -39,12 +39,13 @@ export async function generateMetadata(
 	};
 }
 
-export default function TeamPage(
-    { params: {locale}}: { params: { locale: string }}
+export default async function TeamPage(
+    { params }: { params: Promise<{ locale: string }> }
 ) {
-    unstable_setRequestLocale(locale);
+    const { locale } = await params;
+    setRequestLocale(locale);
 
-    const t = useTranslations();
+    const t = await getTranslations();
     const { person, team } = renderContent(t);
 
     return (
