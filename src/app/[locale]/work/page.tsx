@@ -1,13 +1,13 @@
 import { Flex } from '@/once-ui/components';
 import { Projects } from '@/components/work/Projects';
 import { baseURL, renderContent } from '@/app/resources';
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
-import { useTranslations } from 'next-intl';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { projects } from '@/app/resources/content';
 
 export async function generateMetadata(
-    {params: {locale}}: { params: { locale: string }}
+	{ params }: { params: Promise<{ locale: string }> }
 ) {
+	const { locale } = await params;
 
     const t = await getTranslations();
     const { work } = renderContent(t);
@@ -41,14 +41,15 @@ export async function generateMetadata(
 	};
 }
 
-export default function Work(
-    { params: {locale}}: { params: { locale: string }}
+export default async function Work(
+	{ params }: { params: Promise<{ locale: string }> }
 ) {
-    unstable_setRequestLocale(locale);
-    const currentLocale = locale as 'en' | 'tr';
+	const { locale } = await params;
+	setRequestLocale(locale);
+	const currentLocale = locale as 'en' | 'tr';
 
-    const t = useTranslations();
-    const { person, work } = renderContent(t);
+	const t = await getTranslations();
+	const { person, work } = renderContent(t);
 
     return (
         <Flex
