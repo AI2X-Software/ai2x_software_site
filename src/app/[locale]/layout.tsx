@@ -15,6 +15,8 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 import { routing } from "@/i18n/routing";
 import { renderContent } from "@/app/resources";
 import { Background, Flex } from "@/once-ui/components";
+import { hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
 
 export async function generateMetadata(
 	{ params }: { params: Promise<{ locale: string }> }
@@ -89,6 +91,12 @@ export default async function RootLayout({
 	params
 } : RootLayoutProps) {
 	const { locale } = await params;
+	// Desteklenmeyen locale segmentlerinde (/1.php, /.env gibi bot taramaları
+	// dahil) next-intl'in headers() okuyup "static to dynamic" hatası
+	// üretmesine izin vermeden 404 döndür
+	if (!hasLocale(routing.locales, locale)) {
+		notFound();
+	}
 	setRequestLocale(locale);
 	const messages = await getMessages();
 	return (
