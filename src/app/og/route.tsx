@@ -1,16 +1,19 @@
 import { ImageResponse } from 'next/og'
 import { baseURL, renderContent } from '@/app/resources';
 import { getTranslations } from 'next-intl/server';
+import { readFile } from 'fs/promises';
+import path from 'path';
 
-export const runtime = 'edge';
+// Node.js runtime: Edge Function'ın 1 MB boyut limitini aşmasını önler
+// (Hobby planı; Next 15 ile next/og + gömülü font bundle > 1 MB oluyordu)
+export const runtime = 'nodejs';
 
 export async function GET(request: Request) {
     let url = new URL(request.url)
     let title = url.searchParams.get('title') || 'Portfolio'
-    const font = fetch(
-        new URL('../../../public/fonts/Inter.ttf', import.meta.url)
-    ).then((res) => res.arrayBuffer());
-    const fontData = await font;
+    const fontData = await readFile(
+        path.join(process.cwd(), 'public', 'fonts', 'Inter.ttf')
+    );
 
     const t = await getTranslations();
     const { person } = renderContent(t);
