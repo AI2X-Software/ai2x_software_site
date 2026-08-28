@@ -47,7 +47,7 @@ src/
 
 ## Takım Hakkında
 
-AI2X Takımı, TEKNOFEST, TÜBİTAK ve Robotaksi gibi teknoloji yarışmalarında yer almış, yenilikçi çözümler üreten bir topluluktur.
+AI2X Takımı, TEKNOFEST ve TÜBİTAK gibi teknoloji yarışmalarında yer almış, yenilikçi çözümler üreten bir topluluktur.
 
 ## İletişim
 

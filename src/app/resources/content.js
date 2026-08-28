@@ -185,18 +185,18 @@ const team = {
     description: { en: 'Meet our talented team members', tr: 'Yetenekli ekip üyelerimizle tanışın' },
     members: [
         {
-            id: 'mert-almali',
-            name: 'Süleyman Mert Almalı',
+            id: 'mehmetali-gumusler',
+            name: 'Mehmet Ali Gümüşler',
             role: { en: 'Software Developer', tr: 'Yazılım Geliştirici' },
             bio: {
-                en: 'Computer Engineering student at RTE University. Develops projects on computer vision, artificial intelligence, and autonomous driving systems, gaining practical experience as a TEKNOFEST Robotaxi finalist.',
-                tr: 'RTE Üniversitesi Bilgisayar Mühendisliği öğrencisi. Bilgisayarla görme, yapay zeka ve otonom sürüş sistemleri üzerine projeler geliştirmekte, TEKNOFEST Robotaksi finalisti olarak uygulamalı deneyim kazanmıştır.'
+                en: 'Computer Engineering student at RTE University. Develops computer vision and AI projects for the defense industry. Has works supported by TÜBİTAK and TEKNOFEST.',
+                tr: 'RTE Üniversitesi Bilgisayar Mühendisliği öğrencisi. Savunma sanayisine yönelik görüntü işleme ve yapay zeka projeleri geliştirmektedir. TÜBİTAK ve TEKNOFEST destekli çalışmaları bulunmaktadır.'
             },
-            avatar: '/images/team/mert.jpg',
-            skills: { en: ['Autonomous Driving', 'Computer Vision', 'Python'], tr: ['Otonom Sürüş', 'Görüntü İşleme', 'Python'] },
+            avatar: '/images/team/mehmetali.jpg',
+            skills: { en: ['Web Development', 'Mobile Development', 'Artificial Intelligence', 'Full Stack', 'Computer Vision'], tr: ['Web Geliştirme', 'Mobil Geliştirme', 'Yapay Zeka', 'Full Stack', 'Görüntü İşleme'] },
             social: {
-                linkedIn: 'https://www.linkedin.com/in/suleyman-mert-almali/',
-                github: 'https://github.com/Mertalmali4/'
+                linkedIn: 'https://www.linkedin.com/in/mehmetaligumusler/',
+                github: 'https://github.com/mehmetaligumusler/'
             }
         },
         {
@@ -215,18 +215,18 @@ const team = {
             }
         },
         {
-            id: 'mehmetali-gumusler',
-            name: 'Mehmet Ali Gümüşler',
+            id: 'mert-almali',
+            name: 'Süleyman Mert Almalı',
             role: { en: 'Software Developer', tr: 'Yazılım Geliştirici' },
             bio: {
-                en: 'Computer Engineering student at RTE University. Develops computer vision and AI projects for the defense industry. Has works supported by TÜBİTAK and TEKNOFEST.',
-                tr: 'RTE Üniversitesi Bilgisayar Mühendisliği öğrencisi. Savunma sanayisine yönelik görüntü işleme ve yapay zeka projeleri geliştirmektedir. TÜBİTAK ve TEKNOFEST destekli çalışmaları bulunmaktadır.'
+                en: 'Computer Engineering student at RTE University. Develops projects on computer vision, artificial intelligence, and autonomous driving systems, gaining practical experience as a TEKNOFEST Robotaxi finalist.',
+                tr: 'RTE Üniversitesi Bilgisayar Mühendisliği öğrencisi. Bilgisayarla görme, yapay zeka ve otonom sürüş sistemleri üzerine projeler geliştirmekte, TEKNOFEST Robotaksi finalisti olarak uygulamalı deneyim kazanmıştır.'
             },
-            avatar: '/images/team/mehmetali.jpg',
-            skills: { en: ['Deep Learning', 'Computer Vision', 'Algorithms'], tr: ['Derin Öğrenme', 'Görüntü İşleme', 'Algoritmalar'] },
+            avatar: '/images/team/mert.jpg',
+            skills: { en: ['Autonomous Driving', 'Computer Vision', 'Python'], tr: ['Otonom Sürüş', 'Görüntü İşleme', 'Python'] },
             social: {
-                linkedIn: 'https://www.linkedin.com/in/mehmetaligumusler/',
-                github: 'https://github.com/mehmetaligumusler/'
+                linkedIn: 'https://www.linkedin.com/in/suleyman-mert-almali/',
+                github: 'https://github.com/Mertalmali4/'
             }
         },
         {
@@ -249,11 +249,11 @@ const team = {
             name: 'Ali Emre',
             role: { en: 'Software Developer', tr: 'Yazılım Geliştirici' },
             bio: {
-                en: 'Computer Engineering student at RTE University. Led web technologies, machine learning, and NLP projects; developed socially beneficial software within TÜBİTAK and Teknofest frameworks.',
-                tr: 'RTE Üniversitesi Bilgisayar Mühendisliği öğrencisi. Web teknolojileri, makine öğrenimi ve doğal dil işleme projelerinde liderlik yapmış; TÜBİTAK ve Teknofest kapsamında toplumsal faydaya odaklı yazılımlar geliştirmiştir.'
+                en: 'Computer Engineering student at RTE University. Develops projects in web technologies, machine learning, and NLP; has built socially beneficial software within TÜBİTAK and TEKNOFEST frameworks.',
+                tr: 'RTE Üniversitesi Bilgisayar Mühendisliği öğrencisi. Web teknolojileri, makine öğrenimi ve doğal dil işleme alanlarında projeler geliştirmekte; TÜBİTAK ve TEKNOFEST kapsamında toplumsal faydaya odaklı yazılımlar üretmektedir.'
             },
             avatar: '/images/team/ali.jpg',
-            skills: { en: ['Web Development', 'NLP', 'Project Management'], tr: ['Web Geliştirme', 'Doğal Dil İşleme', 'Proje Yönetimi'] },
+            skills: { en: ['Web Development', 'NLP', 'Machine Learning'], tr: ['Web Geliştirme', 'Doğal Dil İşleme', 'Makine Öğrenimi'] },
             social: {
                 linkedIn: 'https://www.linkedin.com/in/ali-emre/',
                 github: 'https://github.com/Aliemree/'
